@@ -1,5 +1,16 @@
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 
-<model-viewer class="portfolio" alt="Disco Ball Microphone" src="https://assets.codepen.io/10914657/disco_ball_microphone.glb" 
+<model-viewer alt="Disco Ball Microphone" src="https://assets.codepen.io/10914657/disco_ball_microphone.glb" 
 ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" 
 shadow-intensity="1" exposure="0.77" environment-image="legacy"></model-viewer>
+
+<style>model-viewer {
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+}
+
+div.HotspotAnnotation{    font-family: 'Chakra Petch', sans-serif;font-size: 1.5rem;}
+
+body {  background: linear-gradient(to bottom, yellow, black 70%);
+}
+button.Hotspot{background: yellow;border:1px dashed;color:#000}</style>
