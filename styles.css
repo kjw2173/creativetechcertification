@@ -6,7 +6,7 @@ h1 {
   }
   .image-box {
     display: block;
-    max-width: 50%;
+    max-width: 25%;
     height: auto;
   }
   .desc {
