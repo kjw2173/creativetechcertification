@@ -9,7 +9,94 @@
   <!-- Include Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+<style>
+  body {
+  font-family: "Bebas Neue", sans-serif;
+}
+.webtitle {
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+}
+.image-box {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.title {
+  font-weight: bold;
+  font-size: 36px;
+}
+.desc {
+  font-size: 24px;
+}
+.title,
+.desc {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+}
+.portfolio {
+  width: 1000px;
+  height: 1000px;
+}
 
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex; /* Implements flexbox layout */
+  align-items: center; /* Vertically centers items in the container */
+  font-family: Helvetica, Arial, sans-serif; /* Sets Helvetica as the primary font, with fallbacks */
+}
+
+.navbar li {
+  flex-grow: 1; /* Allows each item to grow to fill the space */
+  text-align: center; /* Ensures text is centered within each menu item */
+  padding: 0 5px; /* Adds horizontal padding between items */
+}
+
+.navbar li a {
+  display: block;
+  color: black; /* Sets initial text color to black */
+  text-align: center;
+  padding-top: 20px; /* Top padding */
+  padding-bottom: 20px; /* Bottom padding, adjust as necessary */
+  text-decoration: none;
+  width: 100%; /* Ensures the link takes up the full available width inside the li */
+  font-size: 18px; /* Sets the font size, adjust as necessary */
+}
+
+.navbar li a:hover {
+  background-color: hotpink; /* Changes background color on hover to hot pink */
+  color: white; /* Changes text color on hover to white */
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Creates three columns of equal width */
+  grid-template-rows: repeat(3, 1fr); /* Creates three rows of equal height */
+  gap: 10px; /* Space between grid items */
+  padding: 10px;
+  width: 100vw; /* Sets the grid container width to 100% of the viewport width */
+  height: 100vh; /* Sets the grid container height to 100% of the viewport height */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.grid-item {
+    display: flex; /* Using flexbox to align children */
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    text-align: center; /* Centers text */
+    padding: 10px; /* Adds padding around the content */
+    border: 1px solid #ccc; /* Optional: adds a border for clarity */
+    background-color: #f0f0f0; /* Optional: background color */
+}
+</style>
 </head>
 
 <body>
